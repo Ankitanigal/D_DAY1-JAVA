@@ -1,0 +1,206 @@
+//Day1.1:WAP for Swaping of two number using third variable in java(a=10,b=20)
+import java.util.*;  
+class swap
+{  
+    public static void main(String[] args) 
+    {  
+       int a=10, b=20, temp;
+      
+       System.out.println("Before swapping numbers: "+a +"  "+ b );  
+           temp = a;  
+           a = b ;  
+           b = temp;  
+       System.out.println("\nAfter swapping: "+a +"  " + b);  
+       System.out.println( );  
+    }    
+}
+
+
+//Day1.2:WAP for swaping of two numbers without using third variable(take input from user)
+import java.util.*;
+ class swap_without
+{
+    public  static void main(String args[])
+ {
+ 
+    System.out.println("Enter value of a and b\n");
+    Scanner sc=new Scanner(System.in);
+    int a = sc.nextInt();
+    int  b = sc.nextInt();
+    System.out.println("Before swapping numbers: "+a +"  "+ b ); 
+      a=a+b;
+      b=a-b;
+      a=a-b;
+   System.out.println("\nAfter swapping numbers: "+a +"  "+ b );  
+  
+ }
+}
+
+
+//Day1.3:WAP to find even and odd number in given array.input:{10,17,25,50,71,32}
+import java.util.Arrays; 
+ class array {
+ public static void main(String[] args)
+  {
+    int[] a = {10,17,25,50,71,32};
+	for(int i = 0; i < a.length; i++)
+	{
+		if(a[i] % 2 == 0)
+		{
+		   System.out.println("\n Even number is :"+a[i]++);	
+	        }
+	       else
+	        {
+	           System.out.println("\n Odd number is :"+a[i]++);
+                }
+       }
+ }
+}
+ 
+//Day1.4:WAP to find sum of numbers in given array.Input={10,17,256,50,71,32}
+ class SumOfArray {  
+    public static void main(String[] args) { 
+    int[] a= {10,17,25,50,71,32};  
+        int sum = 0; 
+        for (int i = 0; i < a.length; i++) {  
+           sum = sum + a[i];  
+        }  
+        System.out.println("Sum of all the elements of an array: " + sum);  
+    }  
+} 
+
+
+//Day1.5:WAP to check the given number is prime or not.
+ class prime {
+    public static void main(String[] args) { 
+    int num=31; 
+       int temp=0;
+        for(int i = 2; i <=num-1; i++)
+        {  
+          if(num%i==0) 
+          {
+            temp=temp+1;
+          }
+        if(temp==0)
+         { 
+           System.out.println(num+"is prime number");  
+         }  
+       else
+        {
+          System.out.println(num+"is not prime number");  
+        }
+      } 
+  }
+}
+
+//Day1.7:WAP to find factorial of given number.
+class FactorialExample{  
+   public static void main(String args[])
+{  
+  int i,fact=1;  
+  int number=4; 
+  for(i=1;i<=number;i++) 
+    {    
+      fact=fact*i;    
+    }    
+  System.out.println("Factorial of "+number+" is: "+fact);    
+ }  
+}
+
+//Day1.8:WAP print first even'n' number.
+ class n_even {
+   public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter value of n");
+		int num=sc.nextInt();
+		for(int i=1;i<=n;i++)
+		{
+			if(i%2==0)
+			{
+				System.out.println(i);
+			}
+		}
+         }
+   }
+
+//Day1.9:WAP to print table of 5
+ class table{
+
+
+	public static void main(String[] args)
+       {
+		int num=5,i,table;
+		
+		for(i=1;i<=10;i++)
+		{
+			table=num*i;
+			System.out.println(table);
+		}
+		
+	}
+}
+
+//Day1.10:WAP to find highest element in  given array.
+ class highestof{
+   public static void main(String[] args)
+   {
+		int a[]= {20,40,60,88,99,100};
+		int max=a[0];
+		for(int i=0;i<=5;i++)
+		{
+			
+			if(a[i]>max)
+			{
+				max=a[i];
+			}
+		}
+		System.out.println("Highest Number is:"+max);
+
+	}
+}
+
+//Day1.11:WAP to check whether input charecter is vowel or consonant.
+class Vowel{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter  Character");
+		char ch=sc.next().charAt(0);
+		if(ch=='a'|| ch=='e' || ch=='i' || ch=='o' || ch=='u')
+		{
+			System.out.println(" Character is vowel");
+		}
+		else
+		{
+			System.out.println("Character is Consonant");
+		}
+	}
+}
+
+//Day1.12:WAP to find square root of a number without using method.
+class SquareRoot {  
+public static void main(String[] args)    
+{   
+  System.out.print("Enter a number: ");  
+  Scanner sc = new Scanner(System.in);  
+  int n = sc.nextInt();  
+  System.out.println("The square root of "+ n+ " is: "+squareRoot(n));  
+}  
+public static double squareRoot(int num)   
+  {  
+      double t;  
+      double sqrt=num/2;  
+  do   
+    {  
+      t=sqrt;  
+      sqrt=(t+(num/t))/2;  
+    }   
+  while((t-sqrt)!= 0);  
+  return sqrtroot;  
+ }  
+}  
+		
+
+
+
