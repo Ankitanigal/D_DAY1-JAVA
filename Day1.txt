@@ -178,7 +178,7 @@ class Vowel{
 	}
 }
 
-//Day1.12:WAP to find square root of a number without using method.
+//Day1.12:WAP to find square root of a number without using sqrt method.
 class SquareRoot {  
 public static void main(String[] args)    
 {   
